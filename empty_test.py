@@ -18,6 +18,10 @@ import random
 # print(word.index('Wor'))
 # print(word.index('uhdsafij')) # return a valueError
 
-test_string = '3s..st.st.w'
-test_string_list = test_string.split('.')
-print(test_string_list)
+# test_string = '3s..st.st.w'
+# test_string_list = test_string.split('.')
+# print(test_string_list)
+
+test_string_2 = '123.274.54.37'
+test_string_list = test_string_2.split('.')
+print('Length of valid IP address: ' + str(len(test_string_list)))

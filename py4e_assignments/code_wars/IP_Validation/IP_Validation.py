@@ -13,10 +13,15 @@ print(f'test: {test_string}')
 print(acceptable_characters)
 
 
-def is_valid_IP(input_str):
-    return input_str.count('.')
+def is_valid_ip(input_str):
+    dot_count = input_str.count('.')
+    list_of_octets = input_str.split('.')
+    first_chars = [s[0] for s in list_of_octets]
+    if (dot_count != 3) or (0 in first_chars):
+        return False
+
 
 
 ip_wrong_test_example = ''
 
-test_2 = is_valid_IP('pass')
+test_2 = is_valid_ip('pass')

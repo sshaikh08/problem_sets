@@ -12,8 +12,12 @@ import random
 # squared = map(lambda x: x*x, nums)
 # print(list(squared))  # prints [1, 4, 9, 16, 25]
 
-word = 'Hello World'
-print(word.find('Wor'))  # Returns the starting position of the phrase you're looking for
-print(word.find('uhdsafij')) # Return -1 if the string is not found
-print(word.index('Wor'))
+# word = 'Hello World'
+# print(word.find('Wor'))  # Returns the starting position of the phrase you're looking for
+# print(word.find('uhdsafij')) # Return -1 if the string is not found
+# print(word.index('Wor'))
 # print(word.index('uhdsafij')) # return a valueError
+
+test_string = '3s..st.st.w'
+test_string_list = test_string.split('.')
+print(test_string_list)

@@ -21,7 +21,6 @@ def is_valid_ip(input_str):
         return False
 
 
-
 ip_wrong_test_example = ''
 
 test_2 = is_valid_ip('pass')

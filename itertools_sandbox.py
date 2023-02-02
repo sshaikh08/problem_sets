@@ -19,4 +19,12 @@ print(chained_list)
 for element in chained:
     print(element)
 
+a = [list1, list2, list3]
+result = list(itertools.chain(*a))
+print(a)
+print(*a)
+print('result: ')
+print(result)
+
+
 

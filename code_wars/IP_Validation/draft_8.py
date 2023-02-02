@@ -1,4 +1,4 @@
-# from codewars_test import assert_equals
+from codewars_test import assert_equals
 from string import digits
 from itertools import chain
 
@@ -18,13 +18,10 @@ def is_valid_IP(string_to_check):
     max_octet_value = 256
     first_chars = [i[0] for i in string_list]
     if all(is_char_int_list):
+        valid = True
         for i in range(len(string_list)):
-            if (len(string_list[i]) > 1 > int(first_chars[i])) or int(string_list[i]) > max_octet_value:
-                return False
-            else:
-                return True
-
-
-
-
-
+            if len(string_list[i]) == 0 or int(string_list[i]) > max_octet_value or (
+                    len(string_list[i]) > 1 and int(string_list[i][0]) == 0):
+                valid = False
+                break
+        return valid

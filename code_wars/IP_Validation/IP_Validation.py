@@ -19,6 +19,11 @@ def is_valid_IP_shariq(ipAddress_to_check):
         i.isdigit() and min_octet_value <= int(i) <= max_octet_value and str(int(i)) == i for i in
         ipAddress_to_check.split('.'))
 
-    is_IPAddress_Valid = periods_in_input == periods_in_ipAddress and are_all_octets_valid
+    is_IPAddress_Valid = (periods_in_input == periods_in_ipAddress) and are_all_octets_valid
+
+    # print(periods_in_input)
+    # print(periods_in_ipAddress)
+    # print(are_all_octets_valid)
+    # print((periods_in_input == periods_in_ipAddress) and are_all_octets_valid)
 
     return is_IPAddress_Valid

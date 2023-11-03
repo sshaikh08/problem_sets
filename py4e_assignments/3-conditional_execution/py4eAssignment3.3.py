@@ -43,7 +43,33 @@ try:
 except ValueError:
     print('Invalid value input, value must be a decimal value between 0 and 1')
 
+# Review attempt solution
+
+grade = None
+
+a_minus = 0.9
+b_minus = 0.8
+c_minus = 0.7
+d = 0.6
 
 
+try:
+    score_str = input("Enter Score: ")
+    score_flt = float(score_str)
 
+    if 1.0 >= score_flt >= 0.9:
+        grade = 'A'
+    elif 0.9 > score_flt >= 0.8:
+        grade = 'B'
+    elif 0.8 > score_flt >= 0.7:
+        grade = 'C'
+    elif 0.7 > score_flt >= 0.6:
+        grade = 'D'
+    elif 0.6 > score_flt:
+        grade = 'F'
+
+except (ValueError, TypeError) as ve:
+    print('You must enter a valid decimal point value between 0.0 and 1.0')
+
+print(grade)
 

@@ -33,18 +33,15 @@
 # while True:
 #     try:
 #         hours = float(input('Enter Hours: '))
+#         if hours <= 0:
+#             raise ValueError(INVALID_INPUT_FOR_HOURS_ERR_MSG)
 #         rate = float(input('Enter Hourly Rate: '))
-#
-#         if hours <= 0 or rate <= 0:
-#             raise ValueError('Please enter value greater than 0')
-#
+#         if rate <= 0:
+#             raise ValueError(INVALID_INPUT_FOR_RATE_ERR_MSG)
 #         break
 #
 #     except (ValueError, TypeError) as e:
-#         if "float()" in str(e):
-#             print(INVALID_INPUT_FOR_HOURS_ERR_MSG if "hours" in str(e) else INVALID_INPUT_FOR_RATE_ERR_MSG)
-#         else:
-#             print(INVALID_INPUT_ERR_MSG)
+#         print(str(e))
 #
 # final_pay = computepay(hours, rate)
 #
@@ -77,27 +74,24 @@ if __name__ == "__main__":
     while True:
         try:
             hours = float(input('Enter Hours: '))
+            if hours <= 0:
+                raise ValueError(INVALID_INPUT_FOR_HOURS_ERR_MSG)
             rate = float(input('Enter Hourly Rate: '))
-
-            if hours <= 0 or rate <= 0:
-                raise ValueError('Please enter value greater than 0')
+            if rate <= 0:
+                raise ValueError(INVALID_INPUT_FOR_RATE_ERR_MSG)
 
             break
 
         except (ValueError, TypeError) as e:
-            if "float()" in str(e):
-                print(INVALID_INPUT_FOR_HOURS_ERR_MSG if "hours" in str(e) else INVALID_INPUT_FOR_RATE_ERR_MSG)
-            else:
-                print(INVALID_INPUT_ERR_MSG)
-
+            print(str(e))
+            # if "Enter Hours" in str(e):
+            #     print(INVALID_INPUT_FOR_HOURS_ERR_MSG)
+            # elif "Enter Hourly Rate" in str(e):
+            #     print(INVALID_INPUT_FOR_RATE_ERR_MSG)
+            # else:
+            #     print(INVALID_INPUT_ERR_MSG)
     final_pay = computepay(hours, rate)
 
     print("Pay:", final_pay)
-
-
-print("Pay", final_pay)
-
-
-
 
 

@@ -32,3 +32,36 @@ else:
     final_pay = hours * pay_rate
 
 print(f"Your final pay is: ${final_pay:.2f}")
+
+
+# Review Solution:
+
+# hrs = input("Enter Hours: ")
+# rate = input("Enter Hourly rate: ")
+# hrs_float = float(hrs)
+# rate_float = float(rate)
+# max_hours = 40
+#
+# overtime_multiplier = 1.5
+#
+# overtime_rate = rate_float*overtime_multiplier
+#
+# overtime_hrs = None
+#
+# reg_pay = None
+# overtime_pay = None
+# final_pay = None
+#
+#
+# if hrs_float > max_hours:
+#     overtime_hrs = float(hrs) - max_hours
+#
+#     reg_pay = max_hours*rate_float
+#     overtime_pay = overtime_rate*overtime_hrs
+#
+#     final_pay = reg_pay + overtime_pay
+#
+# else:
+#     final_pay = hrs_float*rate_float
+#
+# print(f"{final_pay:.2f}")

@@ -5,7 +5,7 @@
 # This first line is provided for you
 
 hrs = input("Enter Hours: ")
-pay_rate = input('Enter Pay Rate Per Hour (please enter only integers: ')
+pay_rate = input('Enter Pay Rate Per Hour (please enter only integers): ')
 final_pay = float(pay_rate) * float(hrs)
 print(f'Pay: {final_pay}')
 

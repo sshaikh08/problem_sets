@@ -47,5 +47,21 @@ if match: # if the pattern is found
 
 
 
+# Review Solution:
+
+# text = "X-DSPAM-Confidence:    0.8475"
+#
+# text_float_part = float(text[text.find('0.8475'):])
+#
+# # print(text_part_float)
+#
+# print(text_float_part)
+#
+# # print(type(text_part_float))
+# # print(text.slice)
+
+
+
+
 
 

@@ -28,7 +28,7 @@
 
 # 1:
 
-# num_str = text[text.find(':')+1:].rstrip() # use rstrip() instead of strip()
+# num_str = text[text.find(':')+1:].rstrip()                                 # use rstrip() instead of strip()
 # num = float(num_str)
 # print(num)
 

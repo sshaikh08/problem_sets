@@ -6,6 +6,17 @@
 # worry about error checking the user input unless you want to - you can assume the user types numbers properly. Do
 # not name your variable sum or use the sum() function.
 
+# Starting Code:
+
+# def computepay(h, r):
+#     return 42.37
+#
+# hrs = input("Enter Hours:")
+# p = computepay(10, 20)
+# print("Pay", p)
+
+
+
 # My Submission:
 
 # INVALID_INPUT_ERR_MSG = "Please enter a valid number greater than 0."

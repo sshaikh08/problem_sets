@@ -4,6 +4,13 @@
 # float() to convert the string to a number. Do not worry about error checking the user input - assume the user types
 # numbers properly.
 
+# Starting Code:
+
+# hrs = input("Enter Hours:")
+# h = float(hrs)
+
+
+
 # My solution:
 
 # hrs = float(input("Enter Hours: "))

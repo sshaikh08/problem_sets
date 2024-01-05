@@ -1,6 +1,15 @@
 # 6.5 Write code using find() and string slicing (see section 6.10) to extract the number at the end of the line
 # below. Convert the extracted value to a floating point number and print it out.
 
+# Starting code
+
+# text = "X-DSPAM-Confidence:    0.8475"
+
+
+
+
+
+
 # My Work:
 
 # text = "X-DSPAM-Confidence:    0.8475"
@@ -34,31 +43,33 @@
 
 # 2:
 
-import re
-
-text = "X-DSPAM-Confidence:    0.8475"
-
-pattern = r'\d+\.\d+' # pattern to match a floating-point number
-match = re.search(pattern, text) # search for the pattern in the string
-if match: # if the pattern is found
-    num_str = match.group() # extract the matched substring
-    num = float(num_str) # convert the substring to a floating-point number
-    print(num)
+# import re
+#
+# text = "X-DSPAM-Confidence:    0.8475"
+#
+# pattern = r'\d+\.\d+' # pattern to match a floating-point number
+# match = re.search(pattern, text) # search for the pattern in the string
+# if match: # if the pattern is found
+#     num_str = match.group() # extract the matched substring
+#     num = float(num_str) # convert the substring to a floating-point number
+#     print(num)
 
 
 
 # Review Solution:
 
-# text = "X-DSPAM-Confidence:    0.8475"
-#
-# text_float_part = float(text[text.find('0.8475'):])
-#
-# # print(text_part_float)
-#
-# print(text_float_part)
-#
-# # print(type(text_part_float))
-# # print(text.slice)
+text = "X-DSPAM-Confidence:    0.8475"
+
+float_location = text.find('0.8475')
+
+text_float_part = float(text[float_location:])
+
+# print(text_part_float)
+
+print(text_float_part)
+
+# print(type(text_part_float))
+# print(text.slice)
 
 
 

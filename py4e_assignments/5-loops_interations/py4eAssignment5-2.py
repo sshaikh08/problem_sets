@@ -3,6 +3,20 @@
 # catch it with a try/except and put out an appropriate message and ignore the number. Enter 7, 2, bob, 10,
 # and 4 and match the output below.
 
+# Starting Code
+
+# largest = None
+# smallest = None
+# while True:
+#     num = input("Enter a number: ")
+#     if num == "done":
+#         break
+#     print(num)
+#
+# print("Maximum", largest)
+
+
+
 # My Solution:
 
 # largest = None

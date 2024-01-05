@@ -2,6 +2,16 @@
 # pop up a dialog box. Enter Sarah in the pop-up box when you are prompted so your output will match the desired
 # output. The code below almost works
 
+
+# Starting Code:
+
+# The code below almost works:
+
+# name = input("Enter your name")
+# print("Howdy")
+
+#My Solution:
+
 name = input("Enter your name")
 print(f"Hello {name}")
 

@@ -13,11 +13,13 @@
 
 # My Final Solution
 
+emails = dict()
+
 while True:
     try:
         filename = input("Enter file name: ") or "mbox-short.txt"
 
-        emails = dict()
+
         with open(filename) as file:
             for line in file:
                 if line.startswith('From '):
@@ -30,6 +32,8 @@ while True:
 
 max_count = max(emails.values())
 max_email = max(emails, key=emails.get)
+
+just_emails = emails.values()
 
 print(max_email, max_count)
 
@@ -71,6 +75,11 @@ print(max_email, max_count)
 #         email_that_sent_most = email_address
 #
 # print(email_that_sent_most, most_emails_sent)
+
+
+
+
+
 
 # Chat GPT Solution
 

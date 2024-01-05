@@ -4,6 +4,19 @@
 # function or a variable named sum in your solution. You can download the sample data at
 # http://www.py4e.com/code3/mbox-short.txt when you are testing below enter mbox-short.txt as the file name.
 
+# Starting Code:
+# Use the file name mbox-short.txt as the file name
+# fname = input("Enter file name: ")
+# fh = open(fname)
+# for line in fh:
+#     if not line.startswith("X-DSPAM-Confidence:"):
+#         continue
+#     print(line)
+# print("Done")
+
+
+# My Solution:
+
 
 # Use the file name mbox-short.txt as the file name
 # SPAM_CONFIDENCE_STRING = 'X-DSPAM-Confidence: '
@@ -43,7 +56,8 @@ with open(fname) as fh:
 
     if count > 0:
         average_spam_confidence = spam_confidence_total / count
-        print(f'Average spam confidence: {average_spam_confidence:.12f}')
+       # print(f'Average spam confidence: {average_spam_confidence:.12f}')
+        print(f'Average spam confidence: {average_spam_confidence}')
     else:
         print('No lines starting with "X-DSPAM-Confidence: " found in the file.')
 

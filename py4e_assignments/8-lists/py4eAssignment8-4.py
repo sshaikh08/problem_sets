@@ -11,6 +11,8 @@
 # for line in fh:
 # print(line.rstrip())
 
+
+
 # My Final Optimized Solution
 while True:
     try:
@@ -25,7 +27,7 @@ while True:
         print('Invalid file entry. Please enter a valid file path.')
 
 # Sort the words and convert the set to a list
-sorted_words = sorted(words)
+sorted_words = sorted(words) # sorted() takes in *iterable* and returns a sorted list of the items in the iterable
 
 print(sorted_words)
 

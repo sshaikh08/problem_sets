@@ -19,27 +19,28 @@
 
 # My Solution:
 
-# largest = None
-# smallest = None
-# number_list = []
-#
-#
-# while True:
-#     try:
-#         num = input('Enter a number: ')
-#         if num == 'done':
-#             break
-#         else:
-#             number_list.append(int(num))
-#     except ValueError:
-#         print('Invalid input')
-#
-#
-# largest = max(number_list)
-# smallest = min(number_list)
-#
-# print(f'Maximum is {largest}')
-# print(f'Minimum is {smallest}')
+largest = None
+smallest = None
+number_list = []
+
+
+while True:
+    try:
+        num = input('Enter a number: ')
+        if num == 'done':
+            break
+        else:
+            number_list.append(int(num))
+    except ValueError:
+        print('Invalid input')
+
+
+
+largest = max(number_list)
+smallest = min(number_list)
+
+print(f'Maximum is {largest}')
+print(f'Minimum is {smallest}')
 
 #############################################
 

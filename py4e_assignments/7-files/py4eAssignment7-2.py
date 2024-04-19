@@ -19,24 +19,24 @@
 
 
 # Use the file name mbox-short.txt as the file name
-# SPAM_CONFIDENCE_STRING = 'X-DSPAM-Confidence: '
-# fname = input("Enter file name: ")
-# fh = open(fname)
-#
-# spam_confidence_total = 0
-# count = 0
-# for line in fh:
-#     if not line.startswith(SPAM_CONFIDENCE_STRING):
-#         continue
-#     # print(line)
-#     spam_confidence_total += float(line.lstrip(SPAM_CONFIDENCE_STRING))
-#     count += 1
-#
-# average_spam_confidence = spam_confidence_total / count
-# # print(f'Count: {count}')
-# # print(f'Spam Confidence Total: {spam_confidence_sum}')
-# print(f'Average spam confidence: {average_spam_confidence}')
-# # print("Done")
+SPAM_CONFIDENCE_STRING = 'X-DSPAM-Confidence: '
+fname = input("Enter file name: ")
+fh = open(fname)
+
+spam_confidence_total = 0
+count = 0
+for line in fh:
+    if not line.startswith(SPAM_CONFIDENCE_STRING):
+        continue
+    # print(line)
+    spam_confidence_total += float(line.lstrip(SPAM_CONFIDENCE_STRING))
+    count += 1
+
+average_spam_confidence = spam_confidence_total / count
+# print(f'Count: {count}')
+# print(f'Spam Confidence Total: {spam_confidence_sum}')
+print(f'Average spam confidence: {average_spam_confidence}')
+# print("Done")
 
 # Chat GPT Optimized Solution 1:
 SPAM_CONFIDENCE_STRING = 'X-DSPAM-Confidence: '

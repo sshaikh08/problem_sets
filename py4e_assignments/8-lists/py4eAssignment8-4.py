@@ -33,31 +33,31 @@ print(sorted_words)
 
 # My Solution
 
-# fname = input("Enter file name: ")
-# fh = open(fname)
-# lst = list()
-# for line in fh:
-#     line_lst = line.split()
-#     for word in line_lst:
-#         if word not in lst:
-#             lst.append(word)
-#         else:
-#             continue
-# lst.sort()
-# print(lst)
-# fh.close()
+fname = input("Enter file name: ")
+fh = open(fname)
+lst = list()
+for line in fh:
+    line_lst = line.split()
+    for word in line_lst:
+        if word not in lst:
+            lst.append(word)
+        else:
+            continue
+lst.sort()
+print(lst)
+fh.close()
 
-# Chat GPT Optimized Solution 1
-# fname = input("Enter file name: ")
-# lst = []
-# with open(fname) as fh:
-#     for line in fh:
-#         line_lst = line.split()
-#         for word in line_lst:
-#             if word not in lst:
-#                 lst.append(word)
-# lst.sort()
-# print(lst)
+Chat GPT Optimized Solution 1
+fname = input("Enter file name: ")
+lst = []
+with open(fname) as fh:
+    for line in fh:
+        line_lst = line.split()
+        for word in line_lst:
+            if word not in lst:
+                lst.append(word)
+lst.sort()
+print(lst)
 
 # Chat GPT Optimized Solution 2
 # fname = input("Enter file name: ")
